@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>SMM Dashboard (MVP)</h1>
+<div id="map" style="height: 400px;"></div>
+<hr>
+<form action="/upload-readings" method="post" enctype="multipart/form-data">
+<div class="mb-3">
+<label for="file" class="form-label">Upload readings CSV</label>
+<input class="form-control" type="file" id="file" name="file">
+</div>
+<button class="btn btn-primary" type="submit">Upload</button>
+</form>
+{% endblock %}
