@@ -1,9 +1,0 @@
-{% extends 'base.html' %}
-{% block content %}
-<h1>SMM Dashboard (Mega-style)</h1>
-<div id="map" style="height:400px"></div>
-<form action="/ingest/upload" method="post" enctype="multipart/form-data">
-  <input type="file" name="file">
-  <button type="submit">Upload</button>
-</form>
-{% endblock %}
