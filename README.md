@@ -1,6 +1,6 @@
 # smm-comp63
 
-Short project description for new_branch_1.
+Short project description for branch_1.
 
 ## Quick start
 1. `git clone https://github.com/177kylestone/smm-comp63.git`
