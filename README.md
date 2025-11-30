@@ -1,5 +1,4 @@
-This repository contains the starter files for my Soil moisture monitoring (SMM) workshop project.
+# SMM Flask Mega-style Starter
 
-## How to use
-- README contains basic info.
-- .github/workflows contains a sample GitHub Actions workflow.
+Follow Miguel Grinberg's app patterns (app factory, blueprints, extensions).
+Run tests with `pytest` and start with `flask --app run` after setting `.env`.
