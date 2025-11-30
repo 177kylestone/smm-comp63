@@ -1,0 +1,21 @@
+﻿name: Scheduled social posts
+on:
+  schedule:
+    - cron: '0 9 * * *'   # everyday at 09:00 UTC — adjust as needed
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install requirements
+        run: pip install -r smm_starter/requirements.txt
+      - name: Run publish script (dry-run)
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN || '' }}
+        run: python smm_starter/scripts/fetch_weather.py || echo "script ran (or failed) — this is a placeholder"
