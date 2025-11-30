@@ -1,4 +1,14 @@
-# SMM Flask Mega-style Starter
+# smm-comp63
 
-Follow Miguel Grinberg's app patterns (app factory, blueprints, extensions).
-Run tests with `pytest` and start with `flask --app run` after setting `.env`.
+Short project description for new_branch_1.
+
+## Quick start
+1. `git clone https://github.com/177kylestone/smm-comp63.git`
+2. `cd smm-comp63`
+3. (install/run steps)
+
+## Contributing
+Please open issues / pull requests.
+
+## License
+MIT
